@@ -10,4 +10,5 @@ main()
 
   Hangar aHangar = new Hangar(); // clase Hangar, miembro de la biblioteca field
   Toolbox portBox = new Toolbox(); // clase Toolbox es miembro de la biblioteca field
+  portBox.openLid();
 }

@@ -13,7 +13,10 @@ void openFence(key)
 void gotoField()
 {
   print("-goto air field-");
-  openFence(_fenceKey);
+  Toolbox hangarbox = new Toolbox();
+  hangarbox.openLid();
+  hangarbox._closeLid();
+  //openFence(_fenceKey);
 }
 
 class Hangar
@@ -34,10 +37,17 @@ class Toolbox
   Toolbox()
   {
     print("-init Toolbox-");
+    openLid();
+    _closeLid();
   }
 
-  void openLib()
+  void openLid()
   {
-    print("-open Toolbob lib-");
+    print("-open Toolbox lib-");
+  }
+
+  void _closeLid()
+  {
+    print("-close Toolbo Lid-");
   }
 }
